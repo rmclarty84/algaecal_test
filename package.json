@@ -1,0 +1,10 @@
+{
+  "name": "algaecal",
+  "version": "1.0.0",
+  "description": "Test Site for AlgaeCal",
+  "repository": {
+    "type": "git",
+    "url": "?.git"
+  },
+  "author": "Ryan McLarty",
+}
