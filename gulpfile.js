@@ -1,8 +1,5 @@
 var gulp = require('gulp'),
     gutil = require('gulp-util'),
-    browserify = require('gulp-browserify'),
-    compass = require('gulp-compass'),
-	connect = require('gulp-connect'),
     concat = require('gulp-concat');
 
 var jsSources = [
@@ -14,9 +11,7 @@ var sassSources = ['components/sass/style.scss'];
 gulp.task('js', function() {
   gulp.src(jsSources)
     .pipe(concat('script.js'))
-    .pipe(browserify())
-    .pipe(gulp.dest('builds/development/js'))
-  	.pipe(connect.reload())
+    .pipe(gulp.dest('js'))
 });
 
 gulp.task('compass', function() {
