@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
     gutil = require('gulp-util'),
 	compass = require('gulp-compass'),
+	connect = require('gulp-connect'),
     concat = require('gulp-concat');
 
 var jsSources = [
@@ -13,6 +14,7 @@ gulp.task('js', function() {
   gulp.src(jsSources)
     .pipe(concat('script.js'))
     .pipe(gulp.dest('js'))
+  	.pipe(connect.reload())
 });
 
 gulp.task('compass', function() {
@@ -24,6 +26,7 @@ gulp.task('compass', function() {
     })
     .on('error', gutil.log))
     .pipe(gulp.dest('css'))
+	.pipe(connect.reload())
 });
 
 gulp.task('watch', function() {
@@ -33,10 +36,10 @@ gulp.task('watch', function() {
 
 gulp.task('connect', function() {
 	connect.server({
-		root: 'builds/development/',
+		root: '',
 		livereload: true
 	});
 });
 
 
-gulp.task('default', ['coffee', 'js', 'compass', 'connect', 'watch']);
+gulp.task('default', ['js', 'compass', 'connect', 'watch']);
