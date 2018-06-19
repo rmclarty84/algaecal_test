@@ -1,9 +1,10 @@
 // _base.scss
 // ==============
 body {
-  background: lighten($beige, 10%);
+  background: $white;
   font-family: $bodyFont;
   font-size: 1.1em;
+  margin-top: 10px;	
 }
 
 #content {
@@ -34,24 +35,59 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5em;
-  color: $purple;
+  font-size: 1.2em;
+	line-height:1.3em;
+  color: $black;
+	
+	strong {
+		font-weight:700;
+	}
 }
 
 p {
   font-size: 1.3em;
   line-height: 1.5em;
-    color: $purple;
+    color: $black;
   margin-bottom: 20px;
     margin-top: 15px;
 }
 
-section {
-  padding: 20px 0;
+h3 {
+	text-align:center;
+	font-weight:500;
+	font-size:1.2em;
+	margin-bottom:10px;
 }
 
-.artgroup {
-    @include clearfix;
-} //artgroup
+h4 {
+	text-align:center;
+	font-weight:300;
+	font-size:1em;
+	color:$teal;
+	margin-bottom:20px;
+	line-height:1.3em;
+}
+
+section {
+  padding:0;
+}
+
+a {
+	color:$teal;
+	text-decoration:underline;
+}
+
+.row {
+	padding:10px 0 10px 0;
+}
+
+	@media (min-width: 768px) {
+section {
+  padding:40px 0;
+}
+}
+
+
+
 
 

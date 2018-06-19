@@ -1,0 +1,38 @@
+
+#seen-on {
+
+	.container {
+		padding:0;
+	}
+	
+	.row {
+		padding:40px 0 0;
+	}
+	
+	.col-md-12 {
+		background:$white;
+	}
+	
+	h2 {
+		font-size:1em;
+		font-weight:500;
+		background-color:$green;
+		color:$white;
+		text-align:center;
+		padding:5px 0;
+	}
+	
+	.logos {
+		@include boxShadow();
+		text-align: center;
+	}
+	
+	p {
+		font-weight:300;
+		font-size:1em;
+		line-height:1.3em;
+		padding-right:20px;
+		
+	}
+}
+

@@ -1,0 +1,158 @@
+#packages {
+	display:none;
+	
+	
+	@media (min-width: 768px) {
+.col-md-4 {
+    -ms-flex: 0 0 27.333333%;
+    flex: 0 0 27.333333%;
+    max-width: 27.333333%;
+}
+}
+	
+}
+
+
+.package {
+	width:80%;
+	margin:20px auto;
+	padding:20px 0;
+	box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+	
+	.price {
+		text-align:center;
+		font-weight:700;
+		font-size:1em;
+		margin-bottom:5px;
+		
+		strong {
+			font-size:1.6em;
+		}
+		
+		span {
+			position:relative;
+			top:-6px;
+			font-size:0.95em;
+		}
+	}
+	
+	.day {
+		text-align:center;
+		font-size:1em;
+		margin-top:0;
+		margin-bottom:10px;
+		
+		strong {
+			font-weight:700;
+		}
+		
+		&:before {
+position:absolute;
+			z-index:-10;
+			content:"";
+			width: 125px;
+	 		height: 25px;
+		-webkit-transform: skew(20deg) !important;;
+	   -moz-transform: skew(20deg) !important;
+	     -o-transform: skew(20deg) !important;
+
+	background: yellow;
+		}
+	
+	}
+	
+	.orange {
+
+width:70px;
+		height:70px;
+		background:$orange;
+		color:$white;
+		border-radius:50%;
+		display:table;
+		position:absolute;
+		right:-35px;
+		top:-25px;
+		text-align:center;
+		white-space: pre;
+		box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+	
+	
+		span {
+			display:table-cell;
+	vertical-align:middle;
+			width:70px;
+		height:70px;
+			
+			
+			strong {
+				font-weight:700;
+				font-size:1.2em;
+				line-height:1.1em;
+			}
+			
+		}
+	}
+	
+
+
+	
+	.cart {
+		position:relative;
+		top:-5px;
+	}
+	
+
+	
+	
+}
+
+	.popular {
+		outline:10px solid $darkteal;
+		padding-top:15px;
+	
+		&:before {
+			content:'MOST POPULAR';
+			width:100%;
+			top:-8px;
+			font-size:0.9em;
+			letter-spacing:1px;
+			position:absolute;
+			background:$darkteal;
+			color:$white;
+			text-align:center;
+			padding-bottom:3px;
+			
+		}
+}
+
+
+.btn-success {
+	display:block;
+	font-size:1em;
+    color: #fff;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+    background-color: $green;
+    border-color: $green;
+	padding-left:85px;
+	padding-right:30px;
+    border-bottom: 5px solid #26875a;
+	margin-bottom:15px;
+
+	&:hover {
+		background-color:#26875a;
+		}
+	
+&:before {
+  content: url(../../images/seal_small.png);
+	position:absolute;
+	top:-17px;
+	left:-15px;
+}
+
+
+}
+
+
+

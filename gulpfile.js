@@ -5,7 +5,8 @@ var gulp = require('gulp'),
     concat = require('gulp-concat');
 
 var jsSources = [
-  'components/scripts/video.js'];
+  'components/scripts/video.js',
+	'components/scripts/rest.js'];
 
 var sassSources = ['components/sass/style.scss'];
 
@@ -32,6 +33,7 @@ gulp.task('compass', function() {
 gulp.task('watch', function() {
 	gulp.watch(jsSources, ['js']);
 	gulp.watch('components/sass/*.scss', ['compass']);
+	gulp.watch('*.html');
 });
 
 gulp.task('connect', function() {

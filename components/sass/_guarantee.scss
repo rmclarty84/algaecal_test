@@ -1,0 +1,51 @@
+.background {
+	    @include backImage(
+        '../images/leaf_bg.gif');
+}
+
+#guarantee {
+
+	
+	.row {
+		padding:0;
+	}
+	
+	.col-md-10  {
+		background:$white;
+		margin:15px;
+		padding:20px;
+		
+	}
+	
+		.col-sm-12  {
+		background:$white;
+		margin:15px;
+		padding:20px;
+			text-align:left;
+	}
+	
+	h2 {
+		font-size:1.4em;
+		font-weight:700;
+		color:$orange;
+	}
+	
+	p {
+		font-weight:300;
+		font-size:1em;
+		line-height:1.3em;
+		padding-right:20px;
+		
+	}
+	
+	@media (min-width: 768px) {
+.offset-md-1 {
+    margin-left: 8.333333% !important;
+	text-align:center;
+}
+		}
+	
+}
+
+
+

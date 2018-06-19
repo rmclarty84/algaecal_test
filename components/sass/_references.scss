@@ -1,0 +1,64 @@
+#references {
+	text-align:center;
+	margin-top:40px;
+	
+	h2 {
+		color:$teal;
+		text-align:center;
+		font-weight:700;
+		
+	}
+	
+	ul {
+	width:65%;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:left;
+	margin-bottom:20px;
+	
+	li {list-style:decimal;
+	font-size:0.9em;
+		margin:10px 0;
+	}
+	
+	
+}
+
+	
+	
+.btn-success {
+	margin-top:40px;
+	display:block;
+	font-size:1.5em;
+    color: #fff;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+    background-color: $green;
+    border-color: $green;
+	padding-left:85px;
+	padding-right:30px;
+    border-bottom: 5px solid #26875a;
+	margin-bottom:15px;
+
+	&:hover {
+		background-color:#26875a;
+		}
+	
+&:before {
+  content: url(../../images/seal.png);
+	position:absolute;
+	top:-32px;
+	left:-40px;
+}
+
+
+}	
+	
+	
+}
+
+
+
+
+

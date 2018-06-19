@@ -1,0 +1,34 @@
+.modal-content {
+
+.modal-title {
+	text-align:center;
+	font-size:2em;
+	line-height:1em;
+	font-weight:700;
+}/* CSS Document */
+
+	p {
+		font-size:1em;
+	}
+	
+	img {
+		max-width:100%;
+		
+	}
+	
+	
+	li {
+		font-size:0.9em;
+		line-height:1.4em;
+		margin-top:10px;
+		margin-bottom:10px;
+		padding-left:20px;
+		border-left:3px solid $green;
+	}
+	
+}
+
+.close {
+    text-align: left;
+    padding: 20px !important;
+}

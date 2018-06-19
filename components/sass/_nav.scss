@@ -1,0 +1,66 @@
+.navbar {
+	.container {
+		padding:0 0 15px;
+	}
+}
+
+
+.navbar-brand {
+
+
+
+  @media (max-width: 479px) {
+   width:100%;
+	  display:inline-block;
+  }
+}
+
+	
+.navbar {
+	
+	a {
+		width:100%;
+		display:inline-block;
+	}
+	
+	li {
+		float:left;
+		display:block;
+	}
+	
+}/* CSS Document */
+
+.def-number {
+	color:$black;
+	text-decoration:none;
+	font-size:0.9em;
+
+
+	img {
+		position:relative;
+		top:5px;
+	}
+}
+
+.call {
+	
+	padding-bottom:10px;
+	
+	strong {
+		font-weight:bolder;
+		font-size:1.2em;
+		letter-spacing:-1;
+	}
+	
+	a {
+		color:$teal;
+		text-decoration:none;
+		width:auto;
+		font-weight:bolder;
+
+		
+	}
+	
+}
+
+

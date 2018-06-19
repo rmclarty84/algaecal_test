@@ -1,0 +1,141 @@
+
+$table-border-color: #000000;
+
+
+
+
+
+$table-border-width: 3px;
+$table-border-style: solid;
+$table-outside-border: 2px $table-border-style $table-border-color;
+$table-margin-bottom: 1.529411765em;
+$table-cell-padding: .2em;
+$table-cell-text-align: left;
+$table-header-font-weight: bold;
+$table-border-bottom-thick: 10px solid $table-border-color;
+$table-border-bottom-medium: 5px solid $table-border-color;
+$font-size: 0.78em;
+$small-font:0.75em;
+$font-weight: 700;
+
+
+@-webkit-viewport { width: device-width; zoom: 1.0; }
+   @-moz-viewport { width: device-width; zoom: 1.0; }
+    @-ms-viewport { width: device-width; zoom: 1.0; }
+     @-o-viewport { width: device-width; zoom: 1.0; }
+        @viewport { width: device-width; zoom: 1.0; }
+
+
+
+/*  Sets Body Width */
+
+#tables {
+	h2 {
+		text-align:center;
+		font-size:1.4em;
+		font-weight:700;
+	}
+}
+
+
+
+
+
+/* =============================================================
+    TABLES
+    Table styling.
+ * ============================================================= */
+
+/*  Removes default browser settings
+ *  and evens out inconsistencies. */
+table {
+    max-width: 100%;
+    border-collapse: separate;
+    outline:2px solid #000;
+	padding:8px;
+	margin-top:10px;
+	}
+
+/*  Sets table width to 100%.
+ *  Adds bottom-margin. */
+.table,
+%table {
+    width: 100%;
+    margin-bottom: $table-margin-bottom;
+}
+
+	
+
+	
+
+
+/*  Sets table header font-weight to bold.
+ *  Aligns table header text to the bottom of each cell. */
+.table th,
+%table th {
+    font-weight: $table-header-font-weight;
+    vertical-align: bottom;
+	padding:10px 0px;
+	font-size:$font-size;
+	
+	h3 {
+		text-align:center;
+		font-size:2.2em;
+		font-weight:700;
+	}
+}
+
+/*  Aligns cell text to the top of each cell. */
+.table td,
+%table td {
+   vertical-align: top;
+	border:0;
+	padding:5px 0px;
+		font-size:$font-size;
+font-weight:$font-weight;
+
+	
+	
+	span {
+		font-size:$small-font;
+	}
+}
+
+td:last-child,
+td:nth-last-child(1) {
+    text-align: right;
+}
+
+/*  Removes the border-top from the first row. */
+.table thead:first-child tr th,
+%table thead:first-child tr th,
+.table thead:first-child tr td,
+%table thead:first-child tr td {
+    border-top: 0;
+	padding-bottom:15px;
+}
+
+/*  Adds border-top between two table-body sections. */
+.table tbody + tbody,
+%table tbody + tbody {
+		border-spacing:0px;
+
+}
+
+
+.medium-border {
+		border-top:$table-border-bottom-thick !important;
+		border-bottom:	$table-border-bottom-medium !important;	
+}
+
+		.thick-border {
+		padding-top:15px !important;
+		border-top:$table-border-bottom-thick !important;
+		border-bottom:	$table-border-bottom-thick !important;
+	}
+
+		.top-thick-border {
+		padding-top:0x !important;
+		border-top:$table-border-bottom-thick !important;
+	}
+

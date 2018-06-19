@@ -1,0 +1,62 @@
+.masthead {
+    @include backImage(
+        '../images/leaf_bg.gif');
+	color:$white;
+	padding-top:20px;
+	padding-bottom:20px !important;
+	
+		@media (min-width: 768px) {
+   padding:60px 0 !important;
+}
+	
+	
+	h1,h2,h3 {
+		color:$white;
+	}
+	
+	h1 {
+		margin-bottom:20px !important;
+		text-transform: uppercase;
+		overflow: hidden;
+		letter-spacing:3px;
+		font-size:1.4em;
+		font-weight:500;
+		&:before,
+&:after {
+ background-color: $white;
+ content: "";
+ display: inline-block;
+ height: 2px;
+ position: relative;
+ vertical-align: middle;
+ width: 50%;
+}
+&:before {
+ right: 0.2em;
+ margin-left: -50%;
+}
+&:after {
+ left: 0.2em;
+ margin-right: -50%;
+}
+	
+	}
+	
+	h2 {
+		text-align:left;
+		font-size:1.7em;
+		line-height:1.3em;
+		font-weight:500;
+		
+		.large-underline {
+			text-decoration:underline;
+			text-decoration-color: $red;
+			font-size:1.2em;
+		}
+		
+	}
+	
+
+	
+	
+}

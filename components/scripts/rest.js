@@ -1,16 +1,3 @@
-window._wq = window._wq || [];
-
-// target our video by the first 3 characters of the hashed ID
-_wq.push({ id: "cecdwaq3dz", onReady: function(video) {
-  // at 10 seconds, do something amazing
-  video.bind('secondchange', function(s) {
-    if (s >= 133) {
-      $("#packages").fadeIn();
-    }
-  });
-}});
-
-
 // Phone Number and Open Hours
 $.getJSON('https://www.algaecal.com/wp-json/acf/v3/options/options', function(data) {
   var phone = data.acf.default_phone_number;

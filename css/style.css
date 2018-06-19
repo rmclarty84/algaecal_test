@@ -1,4 +1,4 @@
-@import "http://fonts.googleapis.com/css?family=Patua+One|Inika";
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -57,9 +57,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* CSS Document */
 body {
-  background: #eddbba;
-  font-family: "Inika", serif;
+  background: #FFFFFF;
+  font-family: "Glober", "Roboto", sans-serif;
   font-size: 1.1em;
+  margin-top: 10px;
 }
 
 #content {
@@ -75,14 +76,14 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Patua One", sans-serif;
+  font-family: "Glober", "Roboto", sans-serif;
   font-size: 3em;
 }
 
 h1 {
   font-size: 3.5em;
   margin-bottom: 10px;
-  color: #507356;
+  color: #39a340;
 }
 @media (max-width: 700px) {
   h1 {
@@ -91,52 +92,122 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5em;
-  color: #3E2B3D;
+  font-size: 1.2em;
+  line-height: 1.3em;
+  color: #000000;
+}
+h2 strong {
+  font-weight: 700;
 }
 
 p {
   font-size: 1.3em;
   line-height: 1.5em;
-  color: #3E2B3D;
+  color: #000000;
   margin-bottom: 20px;
   margin-top: 15px;
 }
 
-section {
-  padding: 20px 0;
+h3 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.2em;
+  margin-bottom: 10px;
 }
 
-.artgroup:after {
-  content: "";
-  display: table;
-  clear: both;
+h4 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 1em;
+  color: #54b8cd;
+  margin-bottom: 20px;
+  line-height: 1.3em;
+}
+
+section {
+  padding: 0;
+}
+
+a {
+  color: #54b8cd;
+  text-decoration: underline;
+}
+
+.row {
+  padding: 10px 0 10px 0;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 40px 0;
+  }
+}
+.navbar .container {
+  padding: 0 0 15px;
+}
+
+@media (max-width: 479px) {
+  .navbar-brand {
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+.navbar a {
+  width: 100%;
+  display: inline-block;
+}
+.navbar li {
+  float: left;
+  display: block;
+}
+
+/* CSS Document */
+.def-number {
+  color: #000000;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+.def-number img {
+  position: relative;
+  top: 5px;
+}
+
+.call {
+  padding-bottom: 10px;
+}
+.call strong {
+  font-weight: bolder;
+  font-size: 1.2em;
+  letter-spacing: -1;
+}
+.call a {
+  color: #54b8cd;
+  text-decoration: none;
+  width: auto;
+  font-weight: bolder;
 }
 
 .city {
-  background: url("../images/backgrounds/seattle_skyline.jpg") no-repeat 50% 20%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  background: url("../images/backgrounds/seattle_skyline.jpg") repeat;
+  -webkit-background-size: auto;
+  -moz-background-size: auto;
+  -o-background-size: auto;
+  background-size: auto;
 }
 @media (min-width: 801px) {
   .city {
-    height: 350px;
+    padding-bottom: 60px;
   }
 }
 @media (max-width: 800px) {
   .city {
-    height: 150px;
+    padding-bottom: 60px;
   }
 }
 @media (max-width: 300px) {
   .city {
-    height: 100px;
+    padding-bottom: 60px;
   }
 }
 .city img.logo {
@@ -151,11 +222,11 @@ section {
 .featuredartists {
   background: #8D8862;
   border-top: 20px solid #E3C691;
-  border-bottom: 50px solid #507356;
+  border-bottom: 50px solid #39a340;
 }
 .featuredartists h1 {
   font-size: 3em;
-  color: #263729;
+  color: #1f5722;
 }
 @media (max-width: 700px) {
   .featuredartists h1 {
@@ -173,7 +244,7 @@ section {
   }
 }
 .featuredartists p {
-  color: #314634;
+  color: #256a2a;
 }
 .featuredartists .artistlist {
   padding-bottom: 20px;
@@ -203,30 +274,26 @@ section {
 }
 
 .potterypix {
-  background: url("../images/backgrounds/pottery_workshop.jpg") no-repeat 50% 20%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  background: url("../images/backgrounds/pottery_workshop.jpg") repeat;
+  -webkit-background-size: auto;
+  -moz-background-size: auto;
+  -o-background-size: auto;
+  background-size: auto;
   border-bottom: 50px solid #8D8862;
 }
 @media (min-width: 801px) {
   .potterypix {
-    height: 350px;
+    padding-bottom: 60px;
   }
 }
 @media (max-width: 800px) {
   .potterypix {
-    height: 150px;
+    padding-bottom: 60px;
   }
 }
 @media (max-width: 300px) {
   .potterypix {
-    height: 100px;
+    padding-bottom: 60px;
   }
 }
 
@@ -235,30 +302,26 @@ section {
 }
 
 .workshoppix {
-  background: url("../images/backgrounds/woodworking_workshop.jpg") no-repeat 50% 20%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  background: url("../images/backgrounds/woodworking_workshop.jpg") repeat;
+  -webkit-background-size: auto;
+  -moz-background-size: auto;
+  -o-background-size: auto;
+  background-size: auto;
   border-bottom: 50px solid #8D8862;
 }
 @media (min-width: 801px) {
   .workshoppix {
-    height: 350px;
+    padding-bottom: 60px;
   }
 }
 @media (max-width: 800px) {
   .workshoppix {
-    height: 150px;
+    padding-bottom: 60px;
   }
 }
 @media (max-width: 300px) {
   .workshoppix {
-    height: 100px;
+    padding-bottom: 60px;
   }
 }
 
@@ -288,4 +351,486 @@ section {
   width: 20%;
   min-width: 120px;
   max-width: 160px;
+}
+
+.masthead {
+  background: url("../images/leaf_bg.gif") repeat;
+  -webkit-background-size: auto;
+  -moz-background-size: auto;
+  -o-background-size: auto;
+  background-size: auto;
+  color: #FFFFFF;
+  padding-top: 20px;
+  padding-bottom: 20px !important;
+}
+@media (min-width: 801px) {
+  .masthead {
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 800px) {
+  .masthead {
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 300px) {
+  .masthead {
+    padding-bottom: 60px;
+  }
+}
+@media (min-width: 768px) {
+  .masthead {
+    padding: 60px 0 !important;
+  }
+}
+.masthead h1, .masthead h2, .masthead h3 {
+  color: #FFFFFF;
+}
+.masthead h1 {
+  margin-bottom: 20px !important;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: 3px;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+.masthead h1:before, .masthead h1:after {
+  background-color: #FFFFFF;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+.masthead h1:before {
+  right: 0.2em;
+  margin-left: -50%;
+}
+.masthead h1:after {
+  left: 0.2em;
+  margin-right: -50%;
+}
+.masthead h2 {
+  text-align: left;
+  font-size: 1.7em;
+  line-height: 1.3em;
+  font-weight: 500;
+}
+.masthead h2 .large-underline {
+  text-decoration: underline;
+  text-decoration-color: #e71010;
+  font-size: 1.2em;
+}
+
+#packages {
+  display: none;
+}
+@media (min-width: 768px) {
+  #packages .col-md-4 {
+    -ms-flex: 0 0 27.333333%;
+    flex: 0 0 27.333333%;
+    max-width: 27.333333%;
+  }
+}
+
+.package {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px 0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.package .price {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+.package .price strong {
+  font-size: 1.6em;
+}
+.package .price span {
+  position: relative;
+  top: -6px;
+  font-size: 0.95em;
+}
+.package .day {
+  text-align: center;
+  font-size: 1em;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.package .day strong {
+  font-weight: 700;
+}
+.package .day:before {
+  position: absolute;
+  z-index: -10;
+  content: "";
+  width: 125px;
+  height: 25px;
+  -webkit-transform: skew(20deg) !important;
+  -moz-transform: skew(20deg) !important;
+  -o-transform: skew(20deg) !important;
+  background: yellow;
+}
+.package .orange {
+  width: 70px;
+  height: 70px;
+  background: #e3742c;
+  color: #FFFFFF;
+  border-radius: 50%;
+  display: table;
+  position: absolute;
+  right: -35px;
+  top: -25px;
+  text-align: center;
+  white-space: pre;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.package .orange span {
+  display: table-cell;
+  vertical-align: middle;
+  width: 70px;
+  height: 70px;
+}
+.package .orange span strong {
+  font-weight: 700;
+  font-size: 1.2em;
+  line-height: 1.1em;
+}
+.package .cart {
+  position: relative;
+  top: -5px;
+}
+
+.popular {
+  outline: 10px solid #008ba4;
+  padding-top: 15px;
+}
+.popular:before {
+  content: 'MOST POPULAR';
+  width: 100%;
+  top: -8px;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  position: absolute;
+  background: #008ba4;
+  color: #FFFFFF;
+  text-align: center;
+  padding-bottom: 3px;
+}
+
+.btn-success {
+  display: block;
+  font-size: 1em;
+  color: #fff;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #39a340;
+  border-color: #39a340;
+  padding-left: 85px;
+  padding-right: 30px;
+  border-bottom: 5px solid #26875a;
+  margin-bottom: 15px;
+}
+.btn-success:hover {
+  background-color: #26875a;
+}
+.btn-success:before {
+  content: url(../../images/seal_small.png);
+  position: absolute;
+  top: -17px;
+  left: -15px;
+}
+
+@-webkit-viewport {
+  width: device-width;
+  zoom: 1.0;
+}
+@-moz-viewport {
+  width: device-width;
+  zoom: 1.0;
+}
+@-ms-viewport {
+  width: device-width;
+  zoom: 1.0;
+}
+@-o-viewport {
+  width: device-width;
+  zoom: 1.0;
+}
+@viewport {
+  width: device-width;
+  zoom: 1.0;
+}
+/*  Sets Body Width */
+#tables h2 {
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+/* =============================================================
+    TABLES
+    Table styling.
+ * ============================================================= */
+/*  Removes default browser settings
+ *  and evens out inconsistencies. */
+table {
+  max-width: 100%;
+  border-collapse: separate;
+  outline: 2px solid #000;
+  padding: 8px;
+  margin-top: 10px;
+}
+
+/*  Sets table width to 100%.
+ *  Adds bottom-margin. */
+.table {
+  width: 100%;
+  margin-bottom: 1.52941em;
+}
+
+/*  Sets table header font-weight to bold.
+ *  Aligns table header text to the bottom of each cell. */
+.table th {
+  font-weight: bold;
+  vertical-align: bottom;
+  padding: 10px 0px;
+  font-size: 0.78em;
+}
+.table th h3 {
+  text-align: center;
+  font-size: 2.2em;
+  font-weight: 700;
+}
+
+/*  Aligns cell text to the top of each cell. */
+.table td {
+  vertical-align: top;
+  border: 0;
+  padding: 5px 0px;
+  font-size: 0.78em;
+  font-weight: 700;
+}
+.table td span {
+  font-size: 0.75em;
+}
+
+td:last-child,
+td:nth-last-child(1) {
+  text-align: right;
+}
+
+/*  Removes the border-top from the first row. */
+.table thead:first-child tr th,
+.table thead:first-child tr td {
+  border-top: 0;
+  padding-bottom: 15px;
+}
+
+/*  Adds border-top between two table-body sections. */
+.table tbody + tbody {
+  border-spacing: 0px;
+}
+
+.medium-border {
+  border-top: 10px solid #000000 !important;
+  border-bottom: 5px solid #000000 !important;
+}
+
+.thick-border {
+  padding-top: 15px !important;
+  border-top: 10px solid #000000 !important;
+  border-bottom: 10px solid #000000 !important;
+}
+
+.top-thick-border {
+  padding-top: 0x !important;
+  border-top: 10px solid #000000 !important;
+}
+
+.background {
+  background: url("../images/leaf_bg.gif") repeat;
+  -webkit-background-size: auto;
+  -moz-background-size: auto;
+  -o-background-size: auto;
+  background-size: auto;
+}
+@media (min-width: 801px) {
+  .background {
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 800px) {
+  .background {
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 300px) {
+  .background {
+    padding-bottom: 60px;
+  }
+}
+
+#guarantee .row {
+  padding: 0;
+}
+#guarantee .col-md-10 {
+  background: #FFFFFF;
+  margin: 15px;
+  padding: 20px;
+}
+#guarantee .col-sm-12 {
+  background: #FFFFFF;
+  margin: 15px;
+  padding: 20px;
+  text-align: left;
+}
+#guarantee h2 {
+  font-size: 1.4em;
+  font-weight: 700;
+  color: #e3742c;
+}
+#guarantee p {
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.3em;
+  padding-right: 20px;
+}
+@media (min-width: 768px) {
+  #guarantee .offset-md-1 {
+    margin-left: 8.333333% !important;
+    text-align: center;
+  }
+}
+
+#seen-on .container {
+  padding: 0;
+}
+#seen-on .row {
+  padding: 40px 0 0;
+}
+#seen-on .col-md-12 {
+  background: #FFFFFF;
+}
+#seen-on h2 {
+  font-size: 1em;
+  font-weight: 500;
+  background-color: #39a340;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 5px 0;
+}
+#seen-on .logos {
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+#seen-on p {
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.3em;
+  padding-right: 20px;
+}
+
+#references {
+  text-align: center;
+  margin-top: 40px;
+}
+#references h2 {
+  color: #54b8cd;
+  text-align: center;
+  font-weight: 700;
+}
+#references ul {
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  margin-bottom: 20px;
+}
+#references ul li {
+  list-style: decimal;
+  font-size: 0.9em;
+  margin: 10px 0;
+}
+#references .btn-success {
+  margin-top: 40px;
+  display: block;
+  font-size: 1.5em;
+  color: #fff;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #39a340;
+  border-color: #39a340;
+  padding-left: 85px;
+  padding-right: 30px;
+  border-bottom: 5px solid #26875a;
+  margin-bottom: 15px;
+}
+#references .btn-success:hover {
+  background-color: #26875a;
+}
+#references .btn-success:before {
+  content: url(../../images/seal.png);
+  position: absolute;
+  top: -32px;
+  left: -40px;
+}
+
+footer {
+  text-align: center;
+}
+footer ul {
+  text-align: center;
+  margin-top: 15px;
+}
+footer ul li {
+  list-style: none;
+  display: inline;
+  line-height: 1.2em;
+}
+footer ul li a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+footer p {
+  font-size: 0.8em;
+}
+
+/* CSS Document */
+.modal-content {
+  /* CSS Document */
+}
+.modal-content .modal-title {
+  text-align: center;
+  font-size: 2em;
+  line-height: 1em;
+  font-weight: 700;
+}
+.modal-content p {
+  font-size: 1em;
+}
+.modal-content img {
+  max-width: 100%;
+}
+.modal-content li {
+  font-size: 0.9em;
+  line-height: 1.4em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  border-left: 3px solid #39a340;
+}
+
+.close {
+  text-align: left;
+  padding: 20px !important;
 }
